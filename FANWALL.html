@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FANWALL</title>
+</head>
+<style>
+    .body{
+        display: block;
+    }
+    .right{
+        padding: 20px;
+        height: 500px;
+        width: 200px;
+        display: block;
+        right: 10px;
+        background-color: rgb(77, 15, 53);
+    }
+    .shape{
+        position: center;
+        display:flex;
+        background-color: red;
+        border: 3px solid green;
+    }
+    .h{
+        background-color: #9b1c31;
+        border:palegoldenrod;
+        width: 200px;
+        height: 100px;
+    }
+    .h:hover{
+        box-shadow: 10px 20px 20px;
+        padding: 5px;
+        background-color: rgb(32, 77, 116);
+    }
+    .interviewer{
+        width: 600px;
+        margin: 10px;
+        position: top;
+        border-radius: 10px;
+        border: 3px solid green;
+        background-color:green ;
+        height: 500px;
+    }
+    .candidate{
+        display: flex;
+        width: 600px;
+        margin: 10px;
+        position:top;
+        right: 150px;
+        border-radius: 10px;
+        height: 500px;
+        right: 70px;
+        border: 3px solid green;
+        background-color: #9b1c31;
+    }
+    .left{
+        display: flex;
+    }
+    .b{
+        background-color: #9b1c31;
+    }
+    .n{
+        padding: 20px;
+        color: grey;
+        background-color: #9b1c31;
+    }
+    #btn{
+    background-color: #9b1c31;
+    height: 200px;
+    width: 200px;
+    display: flex;
+}
+#btn:hover{
+    padding: 20px;
+    background-color: rgb(28, 28, 134);
+    cursor: alias;
+}
+    @media only screen and (max-width: 800px) {
+  body {
+    background-color: lightblue;
+  }
+  .right{
+      display: block;
+  }
+  .left{
+      display: block;
+  }
+  .interviewer{
+      display: block;
+      height: 200px;
+      width: 500px;
+  }
+  .candidate{
+      height: 200px;
+      width: 500px;
+  }
+}
+#btn{
+    background-color: #9b1c31;
+    height: 200px;
+    width: 200px;
+    display: flex;
+}
+#btn:hover{
+    padding: 20px;
+    background-color: rgb(28, 28, 134);
+    cursor: alias;
+}
+@media only screen and (max-width: 700px) {
+  body {
+    background-color: lightblue;
+  }
+  .interviewer{
+      height: 200px;
+      width: 300px;
+  }
+  .candidate{
+      height: 200px;
+      width: 300px;
+  }
+}
+#btn{
+    background-color: #9b1c31;
+    height: 120px;
+    width: 120px;
+    display: block;
+}
+#btn:hover{
+    padding: 10px;
+    background-color: rgb(28, 28, 134);
+    cursor: alias;
+}
+</style>
+<body>
+<div class="n">FANWALL&hearts;</div>
+    <div class="shape">
+        <!-- dsnlkfcnsdlkjcn -->
+        <div class="right">
+            FAN-DIVISION</br>
+            <div class="h" id="btn" onclick="program()">ADD Fans</button></div>
+        ----------
+        <div class="h" id="btn" onclick="notepad()">Key-Moments</button></div>
+    -------- 
+    <div class="h" id="btn" onclick="can()">Tickets</div>
+    --------   
+    <div class="h" id="btn">Match-PANEL</div>
+    --------   
+        </div>
+        <!-- <div><iframe width="560" src="https://www.youtube.com/embed/B4yV3AO7G6E" frameborder="0" allow="autoplay;encrypted-media" allowfullscreen></iframe></div> -->
+    <!-- </div> -->
+        <div class="left">jhvdshb
+            <!-- <div class="interviewer">
+                INTERVIWER -->
+                <video autoplay="true" id="videoElement" class="interviewer">
+	
+                </video>
+                <!-- <div class="a"><canvas id="camera">bjhvjyhvgyjygjy</canvas></div> -->
+            </div><pre>INTERVIWER</pre>
+            <video autoplay="true" id="videoElement" class="candidate">
+                <!-- <div><iframe width="560" src="https://www.youtube.com/embed/B4yV3AO7G6E" frameborder="0" allow="autoplay;encrypted-media" allowfullscreen></iframe></div> -->
+            <!-- </div> -->
+            </video>
+            <!-- <div><iframe width="560" src="https://www.youtube.com/embed/B4yV3AO7G6E" frameborder="0" allow="autoplay;encrypted-media" allowfullscreen></iframe></div> -->
+    </div>
+    <div><iframe width="1500" height="700" src="https://www.youtube.com/embed/B4yV3AO7G6E" frameborder="0" allow="autoplay;encrypted-media" allowfullscreen></iframe></div>
+    </div>
+    <div class="b">
+        <!-- djhvbsjbh -->
+        <marquee>MATCH Is In Progress</marquee>
+
+    </div>
+    <script>
+        var video=document.querySelector("#videoElement");
+        console.log(video);
+        if (navigator.mediaDevices.getUserMedia) {
+          navigator.mediaDevices.getUserMedia({ video: true })
+            .then(function (stream) {
+            //then is compromise API used promise to get asynchronous function
+              video.srcObject = stream;
+            })
+            .catch(function (err0r) {
+              console.log("Something went wrong!");
+            });
+        }
+        </script>
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FanWall</title>
+    </head>
+    <style>
+        .program{
+            /* position: fixed; */
+            background-color: red;
+            width: 1000px;
+            height: 500px;
+            display: block;
+        }
+        .canva{
+            background-color: aliceblue;  
+            /* display: block; */
+            /* overflow: scroll; */
+        }
+        #canvas{
+            height: 900px;
+            width: 1100px;
+            background-color: aliceblue;
+            border: 3px solid green;
+            scroll-behavior: auto;
+            overflow: scroll;
+            display: flex;
+            /* background: url(/images.jpg); */
+        }
+        #canvas:hover{
+            /* initial-letter: kjbkjbn; */
+            cursor: alias;
+        }
+        #text{
+            height: 500px;
+            width: 700px;
+            overflow: scroll;
+        }
+        button{
+            margin: 2px;
+            padding: 10px;
+            background-color: aqua;
+            box-shadow: 2px 5px 10px;
+        }
+        button:hover{
+            padding: 20px;
+            background-color: blueviolet;
+        }
+        .cal{
+            align-items:center ;
+            text-align: center;
+            height: 100px;
+            width: 1700px;
+            margin: 0px;
+            padding: 0px;
+            text-decoration: none;
+        }
+        .cal li  {
+            text-decoration: none;
+            margin: 20px;
+        }
+    </style>
+    <body>
+        <div class="program">
+    <!-- iuhiuhgiuhg -->
+    <div class="canva">
+        FANGIRI
+    </div>
+ 
+        <button>Clap&#128079;</button><button>Points&#10133;</button><button>Cheers&#9994;</button>
+        <div class="testcases">
+            <!-- TESTCASES -->
+            <!-- <pre>----------------------</pre> -->
+        </div>
+    </body>
+    </html>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FANWALL</title>
+</head>
+<style>
+    .body{
+        /* position: static; */
+        display: block;
+    }
+    .r{
+        position:static;
+        padding: 20px;
+        height: 200px;
+        width: 100px;
+        display: block;
+        right: 10px;
+        background-color: rgb(77, 15, 53);
+    }
+    .s{
+        position: static;
+        display:flex;
+        background-color: red;
+        border: 3px solid green;
+    }
+    .p{
+        position: inherit;
+        background-color: #9b1c31;
+        border:palegoldenrod;]
+        width:50px;
+        height: 30px;
+    }
+    .h:hover{
+        box-shadow: 10px 20px 20px;
+        padding: 5px;
+        background-color: rgb(32, 77, 116);
+    }
+    .i{
+        width: 300px;
+        margin: 10px;
+        position: top;
+        border-radius: 10px;
+        border: 3px solid green;
+        background-color:green ;
+        height: 200px;
+    }
+    .c{
+        display: flex;
+        width: 300px;
+        margin: 10px;
+        position:top;
+        right: 150px;
+        border-radius: 10px;
+        height: 200px;
+        right: 70px;
+        border: 3px solid green;
+        background-color: #9b1c31;
+    }
+    .l{
+        display: flex;
+        height: 100px;
+        width: 100px;
+    }
+    .b{
+        background-color: #9b1c31;
+    }
+    .n{
+        padding: 20px;
+        background-color: #9b1c31;
+    }
+    #btn{
+    background-color: #9b1c31;
+    height: 200px;
+    width: 200px;
+    display: flex;
+}
+#btn:hover{
+    padding: 20px;
+    background-color: rgb(28, 28, 134);
+    cursor: alias;
+}
+    @media only screen and (max-width: 800px) {
+  body {
+    background-color: lightblue;
+  }
+  .right{
+      display: block;
+  }
+  .left{
+      display: block;
+  }
+  .i{
+      display: block;
+      height: 100px;
+      width: 200px;
+  }
+  .c{
+      height: 200px;
+      width: 200px;
+  }
+}
+#btn{
+    background-color: #9b1c31;
+    height: 200px;
+    width: 200px;
+    display: flex;
+}
+#btn:hover{
+    padding: 20px;
+    background-color: rgb(28, 28, 134);
+    cursor: alias;
+}
+@media only screen and (max-width: 700px) {
+  body {
+    background-color: lightblue;
+  }
+  .i{
+      height: 200px;
+      width: 300px;
+  }
+  .c{
+      height: 200px;
+      width: 300px;
+  }
+}
+#btn{
+    background-color: #9b1c31;
+    height: 120px;
+    width: 120px;
+    display: block;
+}
+#btn:hover{
+    padding: 10px;
+    background-color: rgb(28, 28, 134);
+    cursor: alias;
+}
+</style>
+<body>
+<!-- <div class="n">OFFICIAL INTERVIEW KIT</div> -->
+    <div class="s">
+        <!-- dsnlkfcnsdlkjcn -->
+        <div class="r">
+            all folders
+            <div class="p" id="b" onclick="program()">Add peoples</button></div>
+        ----------
+        <div class="p" id="b" onclick="notepad()">Key-Moments</button></div>
+    -------- 
+    <div class="p">Stadium-Tickets</div>
+    --------   
+    <div class="p">Panel</div>
+    --------   
+        </div>
+        <div class="l">FAN
+            <div class="i">
+                FANNNNNNNNNNNNNNNNNNNN
+                <!-- <video autoplay="true" id="videoElemen" class="i">
+	
+                </video> -->
+                <!-- <div class="a"><canvas id="camera">bjhvjyhvgyjygjy</canvas></div> -->
+            </div><pre>FANNNNNNNNNNNNNNNNN</pre>
+            <div class="c">FANNNNNNNNNNNNNNN</div>
+            <!-- <video autoplay="true" id="videoElemen" class="c">
+	
+            </video> -->
+        </div>
+        <!-- <video autoplay="true" id="videoElement" class="interviewer">
+	
+        </video> -->
+    </div>
+    <div class="b">
+        <!-- djhvbsjbh -->
+        <marquee>Match Is Live</marquee>
+
+    </div>
+
+
+
+
+    
+<div class="top">
+    <button id="scroolup" onclick="scroll(0)">Up line 5</button>
+</div>
+    </div>
+    <script>
+        function program(){
+            var mywindow=window.open("/redirect.html",innerwidth="200", innerHeight="100")
+                // var mywindow=window.open("","","width=200","height=100");
+        }
+        function notepad(){
+            var mywindow=window.open('/notepad.html');
+        }
+
+</body>
+</html>
